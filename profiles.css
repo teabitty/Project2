@@ -55,8 +55,8 @@ hr{
   color: white;
 }
 */
-/*--------CONTENT-----------*/
-.container{
+/*----------------------------CONTENT------------------------------------*/
+.container{ /*container that holds all the boxes*/
   display:flex; /*centerinig the boxes */
   flex-wrap: wrap;
   justify-content: center;
@@ -66,7 +66,7 @@ hr{
 
 
 
-.box{
+.box{  /*box for each cat profile*/
   /* display: inline-block; */
   float: left;
   width:300px; /*good size for having 3 boxes in a row */
@@ -108,10 +108,11 @@ hr{
 
 }
 
-/* .box:hover img{
+/* .box:hover img{ 
   filter:blur(5px);
   transform: scale(1.05);
-} */
+} didn't end up using it because hover doens't work on phones*/
+
 /* .box p{
   color: #020219;
   text-align: left;
@@ -138,7 +139,7 @@ hr{
   animation: fadeOut 0.5s;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn{ /*fade in of the description, couldn't figure out how to fade out*/
   0%{
     opacity: 0;
   }
@@ -147,7 +148,7 @@ hr{
   }
 }
 
-@keyframes fadeOut{
+@keyframes fadeOut{ /*an attempt at making the description box fade/ease out but didn't work*/
   0%{
     opacity: 1;
   }
@@ -157,7 +158,7 @@ hr{
 }
 /* .box:hover .description {
   display: block;
-} */
+} didn't end up using it because hover doens't work on phones*/
 
 .arrow {
   position: absolute;
@@ -181,7 +182,7 @@ hr{
 
 /* #myDIV1, #myDIV2, #myDIV3, #myDIV4, #myDIV5, #myDIV6, #myDIV, #myDIV8, #myDIV9, #myDIV10{
   display:none;
-} */
+} the console in javascript was logging none when the button is first clicked, making the first click not work, so this was an attempt to fix it, but I think this was also causing issues so I commented it out*/
 
 
 .footer{
